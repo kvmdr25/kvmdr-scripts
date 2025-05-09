@@ -14,7 +14,7 @@ fi
 
 # Start logging
 echo "=== NPM KVMDR started at $(date) ===" >> "$logfile"
-cd /root/ovirt-webgui/src/component || exit 1
+cd /root/ovirt-webgui/src/components || exit 1
 
 # Start app in background and immediately update symlink
 npm start >> "$logfile" 2>&1 &
